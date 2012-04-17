@@ -29,7 +29,7 @@ body {
  background: url("image00.png");
  position: relative;
  background-position: center; 
- background-repeat: repeat-n;
+ background-repeat: no-repeat;
  color: #333;
  height: 286px;
 }
