@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  contributions: MyText
+  biography: MyText
+  lefthanded: false
+
+two:
+  name: MyString
+  contributions: MyText
+  biography: MyText
+  lefthanded: false

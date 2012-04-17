@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @rubava_team_member.name %>
+</p>
+
+<p>
+  <b>Contributions:</b>
+  <%= @rubava_team_member.contributions %>
+</p>
+
+<p>
+  <b>Biography:</b>
+  <%= @rubava_team_member.biography %>
+</p>
+
+<p>
+  <b>Lefthanded:</b>
+  <%= @rubava_team_member.lefthanded %>
+</p>
+
+
+<%= link_to 'Edit', edit_rubava_team_member_path(@rubava_team_member) %> |
+<%= link_to 'Back', rubava_team_members_path %>
