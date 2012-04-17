@@ -28,9 +28,11 @@ body {
 #header {
  position: relative;
  background-position: center; 
- background-repeat: repeat-n;
+ background-repeat: no-repeat;
  color: #333;
- height: 286px;
+ height: 200px;
+ padding: 10px;
+ margin: 10px 0px 5px 0px;
  background: url("image00.png");
 }
 #leftcolumn { 
