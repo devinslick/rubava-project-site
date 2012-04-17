@@ -17,10 +17,10 @@ body {
 }
 #wrapper { 
  margin: 0 auto;
- width: 922px;
+ width: 622px;
 }
 #faux {
- background: url(faux-1-3-col.gif);
+ background: #FFF;
  margin: 10px 0px;
  overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
  width: 100%
