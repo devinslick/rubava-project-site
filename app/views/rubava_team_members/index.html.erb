@@ -1,11 +1,10 @@
-<h1>Listing rubava_team_members</h1>
+<h1>Rubava Team Members</h1>
 
 <table>
   <tr>
     <th>Name</th>
     <th>Contributions</th>
     <th>Biography</th>
-    <th>Lefthanded</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,14 +15,9 @@
     <td><%= rubava_team_member.name %></td>
     <td><%= rubava_team_member.contributions %></td>
     <td><%= rubava_team_member.biography %></td>
-    <td><%= rubava_team_member.lefthanded %></td>
     <td><%= link_to 'Show', rubava_team_member %></td>
-    <td><%= link_to 'Edit', edit_rubava_team_member_path(rubava_team_member) %></td>
-    <td><%= link_to 'Destroy', rubava_team_member, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Rubava team member', new_rubava_team_member_path %>

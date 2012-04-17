@@ -4411,3 +4411,193 @@ Served asset /rubava_team_member.js - 304 Not Modified (0ms)
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:12:15 -0500 2012
 Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 17 02:31:50 -0500 2012
+Processing by RubavaTeamMembersController#index as HTML
+  [1m[36mRubavaTeamMember Load (1.1ms)[0m  [1mSELECT "rubava_team_members".* FROM "rubava_team_members" [0m
+  Rendered rubava_team_members/index.html.erb within layouts/application (370.4ms)
+Completed 200 OK in 455ms (Views: 446.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:31:51 -0500 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:31:51 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:31:52 -0500 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:31:52 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:31:52 -0500 2012
+Served asset /users.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:31:52 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (3ms)
+
+
+Started GET "/rubava_team_members/1" for 127.0.0.1 at Tue Apr 17 02:32:02 -0500 2012
+Processing by RubavaTeamMembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRubavaTeamMember Load (0.6ms)[0m  SELECT "rubava_team_members".* FROM "rubava_team_members" WHERE "rubava_team_members"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered rubava_team_members/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 39.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:32:02 -0500 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:03 -0500 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:03 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:03 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:03 -0500 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:03 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/rubava_team_members" for 127.0.0.1 at Tue Apr 17 02:32:06 -0500 2012
+Processing by RubavaTeamMembersController#index as HTML
+  [1m[36mRubavaTeamMember Load (1.0ms)[0m  [1mSELECT "rubava_team_members".* FROM "rubava_team_members" [0m
+  Rendered rubava_team_members/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 75ms (Views: 61.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:32:06 -0500 2012
+Served asset /style.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:06 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:07 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:07 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:07 -0500 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:07 -0500 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/rubava_team_members/1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Processing by RubavaTeamMembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRubavaTeamMember Load (0.9ms)[0m  SELECT "rubava_team_members".* FROM "rubava_team_members" WHERE "rubava_team_members"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered rubava_team_members/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 47ms (Views: 37.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:10 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/rubava_team_members/1/edit" for 127.0.0.1 at Tue Apr 17 02:32:12 -0500 2012
+Processing by RubavaTeamMembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRubavaTeamMember Load (0.6ms)[0m  [1mSELECT "rubava_team_members".* FROM "rubava_team_members" WHERE "rubava_team_members"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered rubava_team_members/_form.html.erb (29.0ms)
+  Rendered rubava_team_members/edit.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 462ms (Views: 451.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /style.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:13 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (5ms)
+
+
+Started GET "/rubava_team_members" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Processing by RubavaTeamMembersController#index as HTML
+  [1m[35mRubavaTeamMember Load (1.1ms)[0m  SELECT "rubava_team_members".* FROM "rubava_team_members" 
+  Rendered rubava_team_members/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 56ms (Views: 46.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_members.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /rubava_team_members.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rubava_team_member.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /rubava_team_member.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Apr 17 02:32:19 -0500 2012
+Served asset /users.js - 304 Not Modified (1ms)
