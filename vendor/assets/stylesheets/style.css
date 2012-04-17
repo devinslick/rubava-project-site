@@ -26,12 +26,12 @@ body {
  width: 100%
 }
 #header {
+ background: url("image00.png");
  position: relative;
  background-position: center; 
  background-repeat: repeat-n;
  color: #333;
  height: 286px;
- background: url("image00.png");
 }
 #leftcolumn { 
  display: inline;
