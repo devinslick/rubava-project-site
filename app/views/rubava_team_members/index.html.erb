@@ -1,21 +1,18 @@
 <h1 font="Cambria" align=center>Rubava Team Members</h1>
 <br />
-<table>
+<table border="2">
   <tr>
     <th>Name</th>
     <th>Contributions</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @rubava_team_members.each do |rubava_team_member| %>
-  <tr>
+  <tr class="border-bottom">
     <td><%= rubava_team_member.name %></td>
     <td><%= rubava_team_member.contributions %></td>
     <td><%= link_to 'Show', rubava_team_member %></td>
   </tr>
 <% end %>
 </table>
-<a href="http://rubava.com/rubava_team_members/new"><i>Add a Rubavite!</i></a>
+<div align="left"><a href="http://rubava.com/rubava_team_members/new"><i>Add a Rubavite!</i></a></div>
 <br />
