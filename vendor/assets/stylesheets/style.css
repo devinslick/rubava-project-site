@@ -60,12 +60,14 @@ body {
  width: 195px;
  float: right;
 }
-.clear { clear: both; background: none; }
-
-tr {
-  border-bottom: solid 1px black;
-  border-spacing: 10px;
+.clear { clear: both; background: none;
 }
 .border-bottom {
   border-bottom: solid 1px black;
+}
+td {
+padding-top:25px;
+padding-bottom:25px;
+padding-right:50px;
+padding-left:50px;
 }
