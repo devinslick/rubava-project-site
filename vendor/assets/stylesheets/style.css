@@ -44,11 +44,12 @@ body {
 #content { 
  float: left;
  color: #333;
- margin: 10px 13px;
+ margin: 20px 13px;
  padding: 0px;
- width: 460px;
+ width: 90%;
  display: inline;
  position: relative;
+ text-align:center;
 }
 #rightcolumn { 
  display: inline;
