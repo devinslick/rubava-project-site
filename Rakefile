@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-DansKaard::Application.load_tasks
+Rubava::Application.load_tasks

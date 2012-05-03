@@ -1,0 +1,29 @@
+<h1>Listing involvements</h1>
+
+<table>
+  <tr>
+    <th>Role</th>
+    <th>Contributions</th>
+    <th>Member</th>
+    <th>Project</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @involvements.each do |involvement| %>
+  <tr>
+    <td><%= involvement.role %></td>
+    <td><%= involvement.contributions %></td>
+    <td><%= involvement.member_id %></td>
+    <td><%= involvement.project_id %></td>
+    <td><%= link_to 'Show', involvement %></td>
+    <td><%= link_to 'Edit', edit_involvement_path(involvement) %></td>
+    <td><%= link_to 'Destroy', involvement, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Involvement', new_involvement_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  role: MyString
+  contributions: MyText
+  member_id: 1
+  project_id: 1
+
+two:
+  role: MyString
+  contributions: MyText
+  member_id: 1
+  project_id: 1

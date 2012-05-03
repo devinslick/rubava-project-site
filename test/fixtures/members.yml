@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fname: MyString
+  lname: MyString
+  email: MyString
+  twitter: MyString
+  leftHanded: false
+  homepage: MyString
+  biography: MyText
+
+two:
+  fname: MyString
+  lname: MyString
+  email: MyString
+  twitter: MyString
+  leftHanded: false
+  homepage: MyString
+  biography: MyText

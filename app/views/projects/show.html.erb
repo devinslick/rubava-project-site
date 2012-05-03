@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= link_to @project.name, @project.prodURL %></h1>
+<p class="centered"><%= @project.status %></p>
+<div>
+  <p>
+    <b>Description:</b>
+    <%= @project.description %>
+  </p>
+</div>
+
+<div>
+  <p>
+    <b>Repo:</b>
+    <%= @project.repo %>
+  </p>
+  <p>
+    <b>License:</b>
+    <%= @project.license %>
+  </p>
+</div>
+
+<div>
+  <%= link_to 'Edit', edit_project_path(@project) %> |
+  <%= link_to 'Back', projects_path %>
+</div>
