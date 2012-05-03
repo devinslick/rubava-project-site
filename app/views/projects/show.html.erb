@@ -25,8 +25,8 @@
   </p>
   <p>
     <% if !@project.repo.empty? %>
-    <b>Repo:</b>
-    <%= @project.repo %>
+    <b>Repository:</b>
+    <%= link_to @project.repo, @project.repo %>
     <% else %>
     <i><b>no repo yet</b></i>
     <% end -%>
