@@ -4,19 +4,22 @@
 <p class="centered"><%= @project.status %></p>
 <div>
   <p>
-    <b>Description:</b>
     <%= @project.description %>
   </p>
 </div>
 
 <div>
   <p>
-    <b>Repo:</b>
-    <%= @project.repo %>
-  </p>
-  <p>
     <b>License:</b>
     <%= @project.license %>
+  </p>
+  <p>
+    <% if !@project.repo.empty? %>
+    <b>Repo:</b>
+    <%= @project.repo %>
+    <% else %>
+    <i><b>no repo yet</b></i>
+    <% end -%>
   </p>
 </div>
 

@@ -1,39 +1,29 @@
 <p id="notice"><%= notice %></p>
+<div>
+  <p>
+    <h1><%= @member.fname %> <%= @member.lname %></h1>
+    <% if @member.leftHanded? %>
+      <h2>"lefty"</h2>
+    <% end %>
+  </p>
+  <br>
+  <p>
+    <%= @member.biography %>
+  </p>
+  <br>
+  <p>
+    <%= mail_to @member.email %>
+  </p>
 
-<p>
-  <b>Fname:</b>
-  <%= @member.fname %>
-</p>
+  <p>
+    <b>Twitter:</b>
+    <%= @member.twitter %>
+  </p>
 
-<p>
-  <b>Lname:</b>
-  <%= @member.lname %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @member.email %>
-</p>
-
-<p>
-  <b>Twitter:</b>
-  <%= @member.twitter %>
-</p>
-
-<p>
-  <b>Lefthanded:</b>
-  <%= @member.leftHanded %>
-</p>
-
-<p>
-  <b>Homepage:</b>
-  <%= @member.homepage %>
-</p>
-
-<p>
-  <b>Biography:</b>
-  <%= @member.biography %>
-</p>
-
+  <p>
+    <b>Homepage:</b>
+    <%= link_to @member.homepage,@member.homepage %>
+  </p>
+</div>
 <%= link_to 'Edit', edit_member_path(@member) %> |
 <%= link_to 'Back', members_path %>
