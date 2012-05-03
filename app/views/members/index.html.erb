@@ -1,35 +1,10 @@
-<h1>Listing members</h1>
-
-<table>
-  <tr>
-    <th>Fname</th>
-    <th>Lname</th>
-    <th>Email</th>
-    <th>Twitter</th>
-    <th>Lefthanded</th>
-    <th>Homepage</th>
-    <th>Biography</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @members.each do |member| %>
-  <tr>
-    <td><%= member.fname %></td>
-    <td><%= member.lname %></td>
-    <td><%= member.email %></td>
-    <td><%= member.twitter %></td>
-    <td><%= member.leftHanded %></td>
-    <td><%= member.homepage %></td>
-    <td><%= member.biography %></td>
-    <td><%= link_to 'Show', member %></td>
-    <td><%= link_to 'Edit', edit_member_path(member) %></td>
-    <td><%= link_to 'Destroy', member, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<h1>Rubava Members</h1>
+<br>
+<div>
+    <% @members.each do |member| %>
+            <p><%= link_to member.fname, member%></p>
+    <% end %>
+</div>
 <br />
 
 <%= link_to 'New Member', new_member_path %>

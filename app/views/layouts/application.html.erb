@@ -11,5 +11,11 @@
 		<div class="focus">
 			<%= yield %>
 		</div>
+		<p class="navigationfooter">
+			<%= link_to 'home', '/' %> |
+ 			<%= link_to 'projects', projects_path %> |
+			<%= link_to 'members', members_path %>
+		</p>
+		<p class="navigationfooter">&copy; Rubava 2012</p>
 	</body>
 </html>

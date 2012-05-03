@@ -1,33 +1,12 @@
-<h1>Listing projects</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Repo</th>
-    <th>License</th>
-    <th>Produrl</th>
-    <th>Description</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= project.repo %></td>
-    <td><%= project.license %></td>
-    <td><%= project.prodURL %></td>
-    <td><%= project.description %></td>
-    <td><%= project.status %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<h1>Projects</h1>
+<div class="bordered">
+    <% @projects.each do |project| %>
+        <div>
+            <h2><%= link_to project.name, project %></h2>
+            <p><%= project.status  %></p>
+        </div>
+    <% end %>
+</div>
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'Add a project', new_project_path %>
