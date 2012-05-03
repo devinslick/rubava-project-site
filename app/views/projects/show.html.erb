@@ -9,6 +9,16 @@
 </div>
 
 <div>
+  <% @project.involvements.each do |involvement| %>
+  <b><%= link_to involvement.member.fname, involvement.member %></b>
+  <br>
+  <%= involvement.role %>
+  <br>
+  <br>
+  <% end %>
+</div>
+
+<div>
   <p>
     <b>License:</b>
     <%= @project.license %>
