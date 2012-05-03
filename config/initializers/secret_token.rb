@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DansKaard::Application.config.secret_token = 'd3e263ab0f5b9f7bf8135983b57907394e0e38132d01c932f45b4c88f9626a85925c7df93f728c3a398fe8064372383e16f2b7dcefccd5a7b212b38dc3efb589'
+Rubava::Application.config.secret_token = 'ab279dd73053a531942faa2e82cb61711afd1f31d6ed52a2de131aee2909e8b1792f9bb5373934114e02500a129411617cf05f6e7ec8391a5d62c24a061bee53'

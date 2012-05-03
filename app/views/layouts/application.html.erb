@@ -1,53 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
- <title>a rubava a day keeps the doctor away</title>
-<%= stylesheet_link_tag "style" %>
-<%= javascript_include_tag "application" %>
-<%= csrf_meta_tags %>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-</head>
-
-<body bgcolor="#191919">
-<a href="http://www.rubava.com"><div id="header"></div></a>
-   <!-- Begin Wrapper -->
-   <div id="wrapper">
-		 
-         <!-- Begin Faux Columns -->
-		 <div id="faux">
-		 
-		       <!-- Begin Left Column -->
-		       <div id="leftcolumn">
-		 
-		             
-		 
-		       </div>
-		       <!-- End Left Column -->
-		 
-		       <!-- Begin Content Column -->
-		       <div id="content">
-	                 <%= yield %>
-		       </div>
-		       <!-- End Content Column -->
-			   
-			   
-			   
-			   <!-- Begin Right Column -->
-		       <div id="rightcolumn">
-		 
-		             
-							
-							
-		       </div>
-		       <!-- End Right Column -->
-
-         </div>	   
-         <!-- End Faux Columns --> 
-		 
-   </div>
-   <!-- End Wrapper -->
-  <ul class="footer" style="text-align:center">
-    <a href="http://www.github.com/gryfft/rubava-project-site"><i>Rubava is on Github!</i></a>
-  </ul>
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Rubava</title>
+	  <%= link_to image_tag("rubava.png"), "/" %>, 
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body class="topflush">
+		<div class="focus">
+			<%= yield %>
+		</div>
+	</body>
 </html>
