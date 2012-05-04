@@ -2,7 +2,7 @@
 <html>
 	<head>
 	  <title>Rubava</title>
-	  <%= image_tag("rubava.png"), %>, 
+	  <%= image_tag "rubava.png" %>, 
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
@@ -12,9 +12,9 @@
 			<%= yield %>
 		</div>
 		<p class="navigationfooter">
-			<%= link_to 'home', '/' %> |
- 			<%= link_to 'projects', projects_path %> |
-			<%= link_to 'members', members_path %>
+			<%= link_to 'home', '/', {:style=>'color:#B0C4DE;'} %> |
+ 			<%= link_to 'projects', projects_path, {:style=>'color:#B0C4DE;'} %> |
+			<%= link_to 'members', members_path, {:style=>'color:#B0C4DE;'} %>
 		</p>
 		<p class="navigationfooter">&copy; Rubava 2012</p>
 	</body>
