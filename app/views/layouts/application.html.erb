@@ -8,14 +8,14 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body class="topflush">
-		<div class="focus">
-			<%= yield %>
-		</div>
 		<p class="navigationfooter">
 			<%= link_to 'home', '/', {:style=>'color:#B0C4DE;'} %> |
  			<%= link_to 'projects', projects_path, {:style=>'color:#B0C4DE;'} %> |
 			<%= link_to 'members', members_path, {:style=>'color:#B0C4DE;'} %>
 		</p>
+		<div class="focus">
+			<%= yield %>
+		</div>
 		<p class="navigationfooter">&copy; Rubava 2012</p>
 	</body>
 	<!-- Google Analytics -->
