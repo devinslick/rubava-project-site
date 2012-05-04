@@ -13,6 +13,16 @@
 
 ActiveRecord::Schema.define(:version => 20120502232445) do
 
+  create_table "comments", :force => true do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
+
   create_table "involvements", :force => true do |t|
     t.string   "role"
     t.text     "contributions"
@@ -41,6 +51,23 @@ ActiveRecord::Schema.define(:version => 20120502232445) do
     t.string   "prodURL"
     t.text     "description"
     t.string   "status"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "rubava_team_members", :force => true do |t|
+    t.string   "name"
+    t.text     "contributions"
+    t.text     "biography"
+    t.boolean  "lefthanded"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "friend_list"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
