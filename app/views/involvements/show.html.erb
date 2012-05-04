@@ -20,6 +20,6 @@
   <%= @involvement.project_id %>
 </p>
 
-
+<%= link_to 'Destroy', @involvement, confirm: 'Are you sure?', method: :delete %> |
 <%= link_to 'Edit', edit_involvement_path(@involvement) %> |
 <%= link_to 'Back', involvements_path %>
