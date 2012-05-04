@@ -14,7 +14,7 @@
   <p>
     <% @member.involvements.each do |involvement| %>
     <div class="bordered">
-      <h2><%= involvement.project.name %></h2>
+      <h2><%= link_to involvement.project.name, involvement.project %></h2>
       <b><%= involvement.role %></b><br>
       <%= involvement.contributions%>
     </div>
