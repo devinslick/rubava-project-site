@@ -1,6 +1,10 @@
+<% if current_user %>
 <h1>Editing involvement</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @involvement %> |
 <%= link_to 'Back', involvements_path %>
+<% else %>
+NOPE NOPE NOPE
+<% end %>

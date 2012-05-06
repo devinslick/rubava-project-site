@@ -6,5 +6,6 @@
     <% end %>
 </div>
 <br />
-
+<% if current_user %>
 <%= link_to 'New Member', new_member_path %>
+<% end %>

@@ -35,5 +35,7 @@
     <%= link_to @member.homepage,@member.homepage %>
   </p>
 </div>
+<% if current_user %>
 <%= link_to 'Edit', edit_member_path(@member) %> |
+<% end %>
 <%= link_to 'Back', members_path %>

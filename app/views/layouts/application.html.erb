@@ -2,7 +2,7 @@
 <html>
 	<head>
 	  <title>Rubava</title>
-	  <%= image_tag "rubava.png" %>, 
+	  <%= image_tag "rubava.png" %>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
@@ -11,13 +11,22 @@
 		<p class="navigationfooter">
 			<%= link_to 'home', '/', {:style=>'color:#B0C4DE;'} %> |
  			<%= link_to 'projects', projects_path, {:style=>'color:#B0C4DE;'} %> |
-			<%= link_to 'members', members_path, {:style=>'color:#B0C4DE;'} %>
+			<%= link_to 'members', members_path, {:style=>'color:#B0C4DE;'} %>		
 		</p>
 		<div class="focus">
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
 			<%= yield %>
 		</div>
-		<p class="navigationlinks">&copy; Rubava 2012</p>
+		<% if current_user %>
+			Logged in as <%= current_user.email %>
+			<%= link_to "Log out", log_out_url %>
+		<% else %>
+			<%= link_to "Log in", log_in_url %>
+		<% end %> 
 	</body>
+
 	<!-- Google Analytics -->
 	<script type="text/javascript">
 		  var _gaq = _gaq || [];
