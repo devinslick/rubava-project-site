@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div>
-  <%= gravatar_url_for @member.email %> 
-  <%= image_tag(gravatar_url_for @member.email) %>
+  <%= gravatar_image_tag(@member.email) %>
+  <%= image_tag gravatar_url_for @member.email %>
   <p>
     <h1><%= @member.fname %> <%= @member.lname %></h1>
     <% if @member.leftHanded? %>
